@@ -7,6 +7,7 @@ export const useStyles = makeStyles({
   },
   appBar: {
     boxShadow: 'none',
+    zIndex: 10000,
   },
   grow: {
     flexGrow: 1,
