@@ -46,13 +46,4 @@ export const useStyles = makeStyles({
     height: '2.4em',
     // padding: '6px 0 7px',
   },
-  // searchIcon: {
-  //   padding: '16px',
-  //   height: '100%',
-  //   position: 'absolute',
-  //   pointerEvents: 'none',
-  //   display: 'flex',
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  // },
 });

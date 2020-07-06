@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './styles.scss';
-import NavBar from 'features/components/navbar/NavBar';
+import Header from 'features/components/header/Header';
 
 class HomePage extends Component {
   render() {
     return (
       <div className="homepage">
-        <NavBar />
+        <Header />
       </div>
     )
   }

@@ -10,7 +10,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import youtube from '../../../assets/images/youtube.png';
 import { useStyles } from './styles';
 
-const NavBar = () => {
+const Header = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -26,9 +26,6 @@ const NavBar = () => {
           <img alt='youtube' src={youtube} className={classes.logo} />
           <div className={classes.grow} />
           <div className={classes.search}>
-            {/* <div className={classes.searchIcon}>
-              <SearchIcon />
-            </div> */}
             <InputBase
               placeholder="Pesquisar..."
               className={classes.inputSearch}
@@ -57,4 +54,4 @@ const NavBar = () => {
   );
 }
 
-export default NavBar;
+export default Header;
