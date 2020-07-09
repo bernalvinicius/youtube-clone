@@ -2,13 +2,7 @@ import axios from 'axios';
 
 const BASE_URL = 'http://www.youtube.com/embed/';
 const URL_SEARCH = 'https://www.googleapis.com/youtube/v3/search';
-
-// Essa credencial é do youtube clone:
-// const API_KEY = 'AIzaSyBwXp0O2XorQDYhm-HIbWs5q10EkWeZZuY';
-
-// Essa credencial que está midias.viniciusbernal:
-// const API_KEY = 'AIzaSyATb_TFT_iNJO5QHJGpekWczP6yCNJGc8U';
-const API_KEY = '';
+const API_KEY = 'AIzaSyATb_TFT_iNJO5QHJGpekWczP6yCNJGc8U';
 
 export const searchVideosGet = (searchValue) =>
   axios.get(

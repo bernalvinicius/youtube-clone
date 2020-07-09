@@ -2,7 +2,7 @@
 
 ![Preview-Screens](https://raw.githubusercontent.com/bernalvinicius/desafio-frontend/master/src/assets/images/yt-clone.png)
 
-If you want to take a look on all screens of the App, they are [here]().
+Se você quiser dar uma olhada em todas as telas do projeto, elas estão [aqui](https://u-tb.netlify.app/).
 
 ## Porquê?
 
@@ -18,51 +18,41 @@ O tanto quanto possível, busquei ser fiel ao design do YouTube em sua versão d
 
 **3** - O usuário pode fazer login na aplicação através da API do Youtube com OAuth2. Com esse acesso não tive problemas de cotas. Mas se não conseguirem fazer o login na aplicação, peço por favor que me avisem para providenciar uma nova Key.
 
+**4** - A URI de Origem JavaScript autorizada e a URI de redirecionamento autorizado, estão a apontar para http://localhost:3000, caso desejem fazer o login no site de deploy, devem apontar para https://u-tb.netlify.app/. O arquivo com as credenciais e as URIs de redirecionamento estão no código fonte do projeto.
+
 ## Funcionalidades
 
 - Home Page, é renderizado os Componentes Header, NavBar e Main:
-
-  - Componente Header: o usuário pode fazer login/logout ou pesquisar por algum vídeo que queira assistir;
-  - Componente Main: por default, sempre na homepage aparecerá uma lista de vídeos relacionado ao tema 'React'. Um dos requisitos do teste era aparecer um conteúdo interessante ao usuário na HomePage. Esse tema vai de acordo com a biblioteca que foi construída essa aplicação;
-  - Componente NavBar: este componente está estático na aplicação e foi inserido apenas com caráter de melhorar a experiência do usuário ao navegar pela Homepage.
+    - Componente Header: o usuário pode fazer login/logout ou pesquisar por algum vídeo que queira assistir;
+    - Componente Main: por default, sempre na homepage aparecerá uma lista de vídeos relacionado ao tema 'React'. Um dos requisitos do teste era aparecer um conteúdo interessante ao usuário na HomePage. Esse tema vai de acordo com a biblioteca que foi construída essa aplicação;
+    - Componente NavBar: este componente está estático na aplicação e foi inserido apenas com caráter de melhorar a experiência do usuário ao navegar pela Homepage.
 
 - Results Page: é renderizado os Componentes Header, NavBar e o conteúdo da página Results:
-
-  - Componente Header: o usuário pode fazer login/logout ou pesquisar por algum vídeo que queira assistir;
-  - Componente NavBar: este componente está estático na aplicação e foi inserido apenas com caráter de melhorar a experiência do usuário ao navegar pela Homepage.
-  - Results Page: quando o usuário faz uma pesquida no header sobre o tema do vídeo que deseja assistir, é na página results que é renderizado o resultado da pesquisa. Por padrão, é retornado um total de oito vídeos relacionados ao tema da pesquisa.
+    - Componente Header: o usuário pode fazer login/logout ou pesquisar por algum vídeo que queira assistir;
+    - Componente NavBar: este componente está estático na aplicação e foi inserido apenas com caráter de melhorar a experiência do usuário ao navegar pela Homepage.
+    - Results Page: quando o usuário faz uma pesquida no header sobre o tema do vídeo que deseja assistir, é na página results que é renderizado o resultado da pesquisa. Por padrão, é retornado um total de oito vídeos relacionados ao tema da pesquisa.
 
 - Watch Page: é renderizado o Componente Header e o conteúdo da página Watch:
-  - Componente Header: o usuário pode fazer login/logout ou pesquisar por algum vídeo que queira assistir;
-  - Watch Page: quando o usuário está na Home ou Results Page, ele pode clicar em algum vídeo que queira assistir. Ao realizar essa ação, ele é redirecionado para a página Watch. Nesse momento, o usuário pode clicar e assistir o vídeo escolhido.
+    - Componente Header: o usuário pode fazer login/logout ou pesquisar por algum vídeo que queira assistir;
+    - Watch Page: quando o usuário está na Home ou Results Page, ele pode clicar em algum vídeo que queira assistir. Ao realizar essa ação, ele é redirecionado para a página Watch. Nesse momento, o usuário pode clicar e assistir o vídeo escolhido.
 
 ## Iniciando a Aplicação
-
 ### Pré-requisitos
-
 Para executar este projeto no modo de desenvolvimento, você precisará de um ambiente básico para executar um aplicativo React, que pode ser encontrado [aqui.](https://reactjs.org/docs/getting-started.html)
-
 ### Instalando
-
 **Clonando este repositório**
-
 ```
 $ https://github.com/bernalvinicius/desafio-frontend.git
 $ cd desafio-frontend
 ```
-
 **Instalando dependências**
-
 ```
 $ yarn
 ```
-
 _ou_
-
 ```
 $ npm install
 ```
-
 **Rodar Aplicação**
 
 Com todas as dependências instaladas e o ambiente configurado corretamente, agora você pode executar o aplicativo::
@@ -78,10 +68,9 @@ $ npm start
 Após gerar um novo projeto com 'npx create-react-app', criei alguns arquivos extras para deixar a aplicação pré-configurada em níveis de compilação e indentação.
 
 Foram criados os seguintes arquivos: (na raiz do projeto):
-
 - **.editorconfig:**
 
-Para este arquivo ser válido, deve ser adicionada e extensão [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig). Com a extensão instalada e o arquivo criado, pode-se definir determinadas indicações de estilo de código. Coisas como quantos espaços uma tab deve ter. Isso pode reduzir o atrito ao trabalhar com uma equipe com vários programadores. Para maiores informações: [EditorConfig](https://editorconfig.org/).
+Para este arquivo ser válido, deve ser adicionada e extensão [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig). Com a extensão instalada e o arquivo criado, pode-se definir determinadas indicações de estilo de código.  Coisas como quantos espaços uma tab deve ter. Isso pode reduzir o atrito ao trabalhar com uma equipe com vários programadores. Para maiores informações: [EditorConfig](https://editorconfig.org/).
 
 - **.prettierrc**
 
