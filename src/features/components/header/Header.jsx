@@ -54,61 +54,61 @@ const Header = () => {
         {/* <div>{userSearch.map(entry =>
           <div>{entry}</div>
         )} */}
-          <Toolbar>
-            <IconButton
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              className={classes.menuIcon}>
-              <MenuIcon />
-            </IconButton>
-            <Link to={{ pathname: '/' }}>
-              <img alt="youtube" src={youtube} className={classes.logo} />
+        <Toolbar>
+          <IconButton
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            className={classes.menuIcon}>
+            <MenuIcon />
+          </IconButton>
+          <Link to={{ pathname: '/' }}>
+            <img alt="youtube" src={youtube} className={classes.logo} />
+          </Link>
+          <div className={classes.grow} />
+          <form className={classes.search}>
+            <InputBase
+              onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }}
+              onChange={(event) => setSearchVideo(event.target.value)}
+              placeholder="Pesquisar..."
+              className={classes.inputSearch}
+            />
+            <Link to={{ pathname: '/results', state: searchVideo }}>
+              <Button
+                className={classes.buttonSearch}
+                startIcon={<SearchIcon />}
+                variant="outlined"
+                onClick={() => showUserSearch(searchVideo)}
+              />
             </Link>
-            <div className={classes.grow} />
-            <form className={classes.search}>
-              <InputBase
-                onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }}
-                onChange={(event) => setSearchVideo(event.target.value)}
-                placeholder="Pesquisar..."
-                className={classes.inputSearch}
-              />
-              <Link to={{ pathname: '/results', state: searchVideo }}>
-                <Button
-                  className={classes.buttonSearch}
-                  startIcon={<SearchIcon />}
-                  variant="outlined"
-                  onClick={() => showUserSearch(searchVideo)}
-                />
-              </Link>
-            </form>
-            <div className={classes.grow} />
-            <IconButton color="inherit">
-              <VideoCall />
-            </IconButton>
-            <IconButton color="inherit">
-              <Apps />
-            </IconButton>
-            <IconButton color="inherit">
-              <MoreVert />
-            </IconButton>
-            {isLoged ? (
-              <GoogleLogout
+          </form>
+          <div className={classes.grow} />
+          <IconButton color="inherit">
+            <VideoCall />
+          </IconButton>
+          <IconButton color="inherit">
+            <Apps />
+          </IconButton>
+          <IconButton color="inherit">
+            <MoreVert />
+          </IconButton>
+          {isLoged ? (
+            <GoogleLogout
+              clientId={credentials[0].web.client_id}
+              buttonText="Logout"
+              onLogoutSuccess={responseGoogleLogout}
+              onFailure={handleLogoutFailure}
+            />
+          ) : (
+              <GoogleLogin
                 clientId={credentials[0].web.client_id}
-                buttonText="Logout"
-                onLogoutSuccess={responseGoogleLogout}
-                onFailure={handleLogoutFailure}
+                buttonText="Fazer Login"
+                onSuccess={responseGoogleLogin}
+                onFailure={handleLoginFailure}
+                cookiePolicy="single_host_origin"
               />
-            ) : (
-                <GoogleLogin
-                  clientId={credentials[0].web.client_id}
-                  buttonText="Fazer Login"
-                  onSuccess={responseGoogleLogin}
-                  onFailure={handleLoginFailure}
-                  cookiePolicy="single_host_origin"
-                />
-              )}
-          </Toolbar>
+            )}
+        </Toolbar>
       </AppBar>
     </div>
   );
