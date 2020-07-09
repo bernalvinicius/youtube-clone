@@ -1,18 +1,29 @@
-import React from 'react';
-import { Drawer, Toolbar, List, Divider, ListItem, ListItemIcon, ListItemText, ListSubheader, Hidden } from '@material-ui/core';
-import { useStyles } from './styles';
-import HomeIcon from '@material-ui/icons/Home';
-import Subscriptions from '@material-ui/icons/Subscriptions';
-import Whatshot from '@material-ui/icons/Whatshot';
-import VideoLibrary from '@material-ui/icons/VideoLibrary';
+import {
+  Drawer,
+  Toolbar,
+  List,
+  Divider,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  ListSubheader,
+  Hidden,
+} from '@material-ui/core';
 import History from '@material-ui/icons/History';
-import QueueMusic from '@material-ui/icons/QueueMusic';
-import Sports from '@material-ui/icons/Sports';
-import SportsEsports from '@material-ui/icons/SportsEsports';
-import Theaters from '@material-ui/icons/Theaters';
-import Receipt from '@material-ui/icons/Receipt';
+import HomeIcon from '@material-ui/icons/Home';
 import LiveTv from '@material-ui/icons/LiveTv';
 import MovieCreation from '@material-ui/icons/MovieCreation';
+import QueueMusic from '@material-ui/icons/QueueMusic';
+import Receipt from '@material-ui/icons/Receipt';
+import Sports from '@material-ui/icons/Sports';
+import SportsEsports from '@material-ui/icons/SportsEsports';
+import Subscriptions from '@material-ui/icons/Subscriptions';
+import Theaters from '@material-ui/icons/Theaters';
+import VideoLibrary from '@material-ui/icons/VideoLibrary';
+import Whatshot from '@material-ui/icons/Whatshot';
+import React from 'react';
+
+import { useStyles } from './styles';
 
 const NavBar = () => {
   const classes = useStyles();
@@ -29,53 +40,76 @@ const NavBar = () => {
           <div>
             <List>
               <ListItem button classes={{ root: classes.listItem }}>
-                <ListItemIcon><HomeIcon /></ListItemIcon>
-                <ListItemText classes={{
-                  primary: classes.listItemText
-                }} primary={'Início'} />
+                <ListItemIcon>
+                  <HomeIcon />
+                </ListItemIcon>
+                <ListItemText
+                  classes={{
+                    primary: classes.listItemText,
+                  }}
+                  primary="Início"
+                />
               </ListItem>
               <ListItem button classes={{ root: classes.listItem }}>
-                <ListItemIcon><Whatshot /></ListItemIcon>
-                <ListItemText classes={{
-                  primary: classes.listItemText
-                }} primary={'Em Alta'} />
+                <ListItemIcon>
+                  <Whatshot />
+                </ListItemIcon>
+                <ListItemText
+                  classes={{
+                    primary: classes.listItemText,
+                  }}
+                  primary="Em Alta"
+                />
               </ListItem>
               <ListItem button classes={{ root: classes.listItem }}>
-                <ListItemIcon><Subscriptions /></ListItemIcon>
-                <ListItemText classes={{
-                  primary: classes.listItemText
-                }} primary={'Inscrições'} />
+                <ListItemIcon>
+                  <Subscriptions />
+                </ListItemIcon>
+                <ListItemText
+                  classes={{
+                    primary: classes.listItemText,
+                  }}
+                  primary="Inscrições"
+                />
               </ListItem>
             </List>
             <Divider />
             <List>
               <ListItem button classes={{ root: classes.listItem }}>
-                <ListItemIcon><VideoLibrary /></ListItemIcon>
-                <ListItemText classes={{
-                  primary: classes.listItemText
-                }} primary={'Biblioteca'} />
+                <ListItemIcon>
+                  <VideoLibrary />
+                </ListItemIcon>
+                <ListItemText
+                  classes={{
+                    primary: classes.listItemText,
+                  }}
+                  primary="Biblioteca"
+                />
               </ListItem>
               <ListItem button classes={{ root: classes.listItem }}>
-                <ListItemIcon><History /></ListItemIcon>
-                <ListItemText classes={{
-                  primary: classes.listItemText
-                }} primary={'Histórico'} />
+                <ListItemIcon>
+                  <History />
+                </ListItemIcon>
+                <ListItemText
+                  classes={{
+                    primary: classes.listItemText,
+                  }}
+                  primary="Histórico"
+                />
               </ListItem>
             </List>
             <Divider />
             <List
-              component='nav'
-              aria-labelledby='nested-list-subheader'
+              component="nav"
+              aria-labelledby="nested-list-subheader"
               subheader={
                 <ListSubheader
-                  component='div'
-                  id='nested-list-subheader'
-                  className={classes.subheader}
-                >
+                  component="div"
+                  id="nested-list-subheader"
+                  className={classes.subheader}>
                   O Melhor do youtube
-                  </ListSubheader>
-              }
-            >
+                </ListSubheader>
+              }>
               <ListItem button classes={{ root: classes.listItem }}>
                 <ListItemIcon>
                   <QueueMusic />
@@ -84,7 +118,7 @@ const NavBar = () => {
                   classes={{
                     primary: classes.listItemText,
                   }}
-                  primary={'Música'}
+                  primary="Música"
                 />
               </ListItem>
               <ListItem button classes={{ root: classes.listItem }}>
@@ -95,7 +129,7 @@ const NavBar = () => {
                   classes={{
                     primary: classes.listItemText,
                   }}
-                  primary={'Esportes'}
+                  primary="Esportes"
                 />
               </ListItem>
               <ListItem button classes={{ root: classes.listItem }}>
@@ -106,7 +140,7 @@ const NavBar = () => {
                   classes={{
                     primary: classes.listItemText,
                   }}
-                  primary={'Jogos'}
+                  primary="Jogos"
                 />
               </ListItem>
               <ListItem button classes={{ root: classes.listItem }}>
@@ -117,7 +151,7 @@ const NavBar = () => {
                   classes={{
                     primary: classes.listItemText,
                   }}
-                  primary={'Filmes'}
+                  primary="Filmes"
                 />
               </ListItem>
               <ListItem button classes={{ root: classes.listItem }}>
@@ -128,7 +162,7 @@ const NavBar = () => {
                   classes={{
                     primary: classes.listItemText,
                   }}
-                  primary={'Notícias'}
+                  primary="Notícias"
                 />
               </ListItem>
               <ListItem button classes={{ root: classes.listItem }}>
@@ -139,7 +173,7 @@ const NavBar = () => {
                   classes={{
                     primary: classes.listItemText,
                   }}
-                  primary={'Ao vivo'}
+                  primary="Ao vivo"
                 />
               </ListItem>
               <ListItem button classes={{ root: classes.listItem }}>
@@ -150,7 +184,7 @@ const NavBar = () => {
                   classes={{
                     primary: classes.listItemText,
                   }}
-                  primary={'Videos 360'}
+                  primary="Videos 360"
                 />
               </ListItem>
             </List>
@@ -160,6 +194,6 @@ const NavBar = () => {
       </Hidden>
     </div>
   );
-}
+};
 
 export default NavBar;

@@ -1,10 +1,6 @@
 import { makeStyles } from '@material-ui/core';
 
 export const useStyles = makeStyles({
-  root: {
-    // background: 'red',
-    // height: '100vh',
-  },
   appBar: {
     boxShadow: 'none',
     zIndex: 10000,
@@ -15,9 +11,6 @@ export const useStyles = makeStyles({
   btnLogin: {
     color: '#3EA6FF',
   },
-  icons: {
-    // paddingRight: '20px',
-  },
   menuIcon: {
     paddingRight: '20px',
     paddingLeft: '16px',
@@ -26,12 +19,10 @@ export const useStyles = makeStyles({
     height: '25px',
   },
   search: {
-    // border: '1px solid red',
     width: '40%',
     maxWidth: '768px',
     display: 'flex',
     flexDirection: 'row',
-    // justifyContent: 'space-between',
     alignItems: 'center',
     background: '#fff',
   },
@@ -45,6 +36,5 @@ export const useStyles = makeStyles({
     borderLeft: 'none',
     borderRadius: 0,
     height: '2.4em',
-    // padding: '6px 0 7px',
   },
 });
