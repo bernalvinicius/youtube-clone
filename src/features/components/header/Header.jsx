@@ -26,12 +26,6 @@ const Header = () => {
     }
   };
 
-  const showUserSearch = (search) => {
-    // console.log(search);
-    // setUserSearch((auxArray) => [...auxArray, search]);
-    // console.log('aaa: ', userSearch);
-  };
-
   const responseGoogleLogout = () => {
     setIsLoged(false);
     setAccess_Token('');
@@ -46,14 +40,10 @@ const Header = () => {
   };
 
   const classes = useStyles();
-  // console.log('bbb: ', setUserSearch);
 
   return (
     <div>
       <AppBar color="inherit" className={classes.appBar}>
-        {/* <div>{userSearch.map(entry =>
-          <div>{entry}</div>
-        )} */}
         <Toolbar>
           <IconButton
             edge="start"
@@ -68,7 +58,9 @@ const Header = () => {
           <div className={classes.grow} />
           <form className={classes.search}>
             <InputBase
-              onKeyPress={(e) => { e.key === 'Enter' && e.preventDefault(); }}
+              onKeyPress={(e) => {
+                e.key === 'Enter' && e.preventDefault();
+              }}
               onChange={(event) => setSearchVideo(event.target.value)}
               placeholder="Pesquisar..."
               className={classes.inputSearch}
@@ -78,7 +70,6 @@ const Header = () => {
                 className={classes.buttonSearch}
                 startIcon={<SearchIcon />}
                 variant="outlined"
-                onClick={() => showUserSearch(searchVideo)}
               />
             </Link>
           </form>
@@ -100,14 +91,14 @@ const Header = () => {
               onFailure={handleLogoutFailure}
             />
           ) : (
-              <GoogleLogin
-                clientId={credentials[0].web.client_id}
-                buttonText="Fazer Login"
-                onSuccess={responseGoogleLogin}
-                onFailure={handleLoginFailure}
-                cookiePolicy="single_host_origin"
-              />
-            )}
+            <GoogleLogin
+              clientId={credentials[0].web.client_id}
+              buttonText="Fazer Login"
+              onSuccess={responseGoogleLogin}
+              onFailure={handleLoginFailure}
+              cookiePolicy="single_host_origin"
+            />
+          )}
         </Toolbar>
       </AppBar>
     </div>
