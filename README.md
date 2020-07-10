@@ -7,7 +7,7 @@ Se você quiser dar uma olhada em todas as telas do projeto, elas estão [aqui](
 ## Porquê?
 
 Este projeto faz parte do processo seletivo para desenvolvedor Front-End enviado pela ByCoders.
-O desafio consiste em fazer um projeto que consome à API do YouTube e tem um layou parecido com do YouTube.
+O desafio consiste em fazer um projeto que consome à API do YouTube e tem um layout parecido com do YouTube.
 O tanto quanto possível, busquei ser fiel ao design do YouTube em sua versão desktop de Julho/2020.
 
 ## Algumas observações sobre esse App
