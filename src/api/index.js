@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const BASE_URL = 'http://www.youtube.com/embed/';
 const URL_SEARCH = 'https://www.googleapis.com/youtube/v3/search';
-const API_KEY = 'AIzaSyATb_TFT_iNJO5QHJGpekWczP6yCNJGc8U';
+const API_KEY = '';
 
 export const searchVideosGet = (searchValue) =>
   axios.get(
