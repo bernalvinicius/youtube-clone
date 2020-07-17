@@ -1,104 +1,117 @@
-# YouTube Clone - ByCoders
+# YouTube Clone
 
-![Preview-Screens](https://raw.githubusercontent.com/bernalvinicius/desafio-frontend/master/src/assets/images/yt-clone.png)
-                   https://raw.githubusercontent.com/bernalvinicius/youtube-clone/master/src/assets/images/yt-clone.png
+![Preview-Screens](https://raw.githubusercontent.com/bernalvinicius/youtube-clone/master/src/assets/images/ytube-clone.png)
 
-## Porquê?
+## Why?
 
-Este projeto faz parte do processo seletivo para desenvolvedor Front-End enviado pela ByCoders.
-O desafio consiste em fazer um projeto que consome à API do YouTube e tem um layout parecido com do YouTube.
-O tanto quanto possível, busquei ser fiel ao design do YouTube em sua versão desktop de Julho/2020.
+This project is part of my personal portfolio, I did it only with the intention of improving my skills in React.js, so, I'll be happy if you could provide me any feedback about the project, code, structure or anything that you can report that could make me a better developer!
+It is a project that consumes the YouTube API and has a layout similar to YouTube.
+As much as possible, I tried to be faithful to YouTube's design in its July/2020 desktop version.
 
-## Algumas observações sobre esse App
+Email-me: vini_bernal@hotmail.com
 
-**1** - Como o YouTube foi desenvolvido com a base do Material Design, para este desafio utilizei o Material-UI, que traz todos os recursos do Material Design para projetos em React.
+Connect with me at [LinkedIn](https://www.linkedin.com/in/vin%C3%ADcius-bernal-19254027/)
 
-**2** - Eu criei minhas credenciais no Console de Desenvolvedor do Google, para conseguir me comunicar com a API, a minha key de acesso vai junto do código disponibilizado. Porém, durante o processo de criação deste projeto tive muitos problemas com cotas. Se vocês não conseguirem fazer o GET à API, por favor me avisem que providenciarei um nova Key para os testes.
+## Some Observations about this App
 
-**3** - O usuário pode fazer login na aplicação através da API do Youtube com OAuth2. Com esse acesso não tive problemas de cotas. Mas se não conseguirem fazer o login na aplicação, peço por favor que me avisem para providenciar uma nova Key.
+**1** - As YouTube was developed on the basis of Material Design, for this challenge I used Material-UI, which brings all the resources of Material Design to projects in React.
 
-**4** - A URI de Origem JavaScript autorizada e a URI de redirecionamento autorizado, estão a apontar para http://localhost:3000, caso desejem fazer o login no site de deploy, devem apontar para https://u-tb.netlify.app/. O arquivo com as credenciais e as URIs de redirecionamento estão no código fonte do projeto.
+**2** - You need to create a project in the Google [Developer Console](https://console.developers.google.com/projectcreate?pli=1). Activate [YouTubeData API V3](https://console.developers.google.com/apis/api/youtube.googleapis.com/overview) within the project. And create an access credential so that your app can communicate with the API. Be aware of the daily quota of requests that we can make the API.
 
-## Funcionalidades
+**3** - The user can log in to the application through the YouTube API with OAuth2. To do this, you need to create credentials within your project.
 
-- Home Page, é renderizado os Componentes Header, NavBar e Main:
-    - Componente Header: o usuário pode fazer login/logout ou pesquisar por algum vídeo que queira assistir;
-    - Componente Main: por default, sempre na homepage aparecerá uma lista de vídeos relacionado ao tema 'React'. Um dos requisitos do teste era aparecer um conteúdo interessante ao usuário na HomePage. Esse tema vai de acordo com a biblioteca que foi construída essa aplicação;
-    - Componente NavBar: este componente está estático na aplicação e foi inserido apenas com caráter de melhorar a experiência do usuário ao navegar pela Homepage.
+**4** - The Authorized JavaScript origin URI and the authorized redirect URIs must point to http: // localhost: 3000. The file with the credentials and the redirect URIs is already in the project. You just need to enter your credentials.
 
-- Results Page: é renderizado os Componentes Header, NavBar e o conteúdo da página Results:
-    - Componente Header: o usuário pode fazer login/logout ou pesquisar por algum vídeo que queira assistir;
-    - Componente NavBar: este componente está estático na aplicação e foi inserido apenas com caráter de melhorar a experiência do usuário ao navegar pela Homepage.
-    - Results Page: quando o usuário faz uma pesquida no header sobre o tema do vídeo que deseja assistir, é na página results que é renderizado o resultado da pesquisa. Por padrão, é retornado um total de oito vídeos relacionados ao tema da pesquisa.
+## Functionalities
 
-- Watch Page: é renderizado o Componente Header e o conteúdo da página Watch:
-    - Componente Header: o usuário pode fazer login/logout ou pesquisar por algum vídeo que queira assistir;
-    - Watch Page: quando o usuário está na Home ou Results Page, ele pode clicar em algum vídeo que queira assistir. Ao realizar essa ação, ele é redirecionado para a página Watch. Nesse momento, o usuário pode clicar e assistir o vídeo escolhido.
+- Home Page, Header, NavBar and Main Components are rendered:
+    - Header Component: the user can login/logout or search for any video they want to watch;
+    - Main Component: by default, a list of videos related to the 'React' theme will always appear on the homepage. This theme goes according to the library that this application was built;
+    - NavBar Component: this component is static in the application and was inserted only to improve the user experience when browsing the Homepage.
 
-## Iniciando a Aplicação
-### Pré-requisitos
-Para executar este projeto no modo de desenvolvimento, você precisará de um ambiente básico para executar um aplicativo React, que pode ser encontrado [aqui.](https://reactjs.org/docs/getting-started.html)
-### Instalando
-**Clonando este repositório**
+- Results Page: Header, NavBar components and Results page content are rendered:
+    - Header Component: the user can login/logout or search for any video they want to watch;
+    - NavBar Component: this component is static in the application and was inserted only to improve the user experience when browsing the Homepage.
+    - Results Page: when the user searches the header on the topic of the video he wants to watch, it is on the results page that the search result is rendered. By default, a total of eight videos related to the research topic are returned.
+
+- Watch Page: the Header Component and Watch page content are rendered:
+    - Header Component: the user can login/logout or search for any video they want to watch;
+    - Watch Page: when the user is on the Home or Results Page, he can click on any video he wants to watch. When performing this action, he is redirected to the Watch page. At that moment, the user can click and watch the chosen video.
+
+## Getting Started
+### Prerequisites
+To run this project in the development mode, you'll need to have a basic environment to run a React App, that can be found [here.](https://reactjs.org/docs/getting-started.html)
+### Installing
+**Cloning this repository**
 ```
-$ https://github.com/bernalvinicius/desafio-frontend.git
-$ cd desafio-frontend
+$ https://github.com/bernalvinicius/youtube-clone.git
+$ cd youtube-clone
 ```
-**Instalando dependências**
+**Installing Dependencies**
 ```
 $ yarn
 ```
-_ou_
+_or_
 ```
 $ npm install
 ```
-**Rodar Aplicação**
+**Running**
 
-Com todas as dependências instaladas e o ambiente configurado corretamente, agora você pode executar o aplicativo::
+With all dependencies installed and the environment properly configured, you can now run the app:
 
 ```
 $ npm start
 ```
 
-## Construído com
+## Built With
 
-**Obs:** Abaixo falarei sobre alguns plugins, todos eles no [Visual Studio Code](https://code.visualstudio.com/).
+**Obs:** Below I will talk about some plugins, all of them in [Visual Studio Code](https://code.visualstudio.com/).
 
-Após gerar um novo projeto com 'npx create-react-app', criei alguns arquivos extras para deixar a aplicação pré-configurada em níveis de compilação e indentação.
+After generating a new project with 'npx create-react-app', I created some extra files to leave the application preconfigured in compilation and indentation levels.
 
-Foram criados os seguintes arquivos: (na raiz do projeto):
+The following files were created: (at the root of the project):
 - **.editorconfig:**
 
-Para este arquivo ser válido, deve ser adicionada e extensão [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig). Com a extensão instalada e o arquivo criado, pode-se definir determinadas indicações de estilo de código.  Coisas como quantos espaços uma tab deve ter. Isso pode reduzir o atrito ao trabalhar com uma equipe com vários programadores. Para maiores informações: [EditorConfig](https://editorconfig.org/).
+For this file to be valid, it must be added the extension [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig). With the extension installed and the file created, you can define certain code style indications. Things like how many spaces a tab should have. This can reduce friction when working with a team of multiple programmers. For more informations: [EditorConfig](https://editorconfig.org/).
 
 - **.prettierrc**
 
-Para esse arquivo ser válido, deve ser adicionada a extensão [Prettier – Code formatter](https://prettier.io/). O Prettier nada mais é do que um formatador de código, ele garante que todo o código emitido esteja em conformidade com um estilo consistente. Por exemplo, você pode escrever uma linha de código que fique muito grande, pode limitar o tamanho máximo da linha para 60 caracteres e então o Prettier fará o trabalho de organizar o código para você. Com a extensão instalada e o arquivo criado pode-se dar início a configuração do arquivo. Para maiores informações: [Prettier](https://prettier.io/).
+For this file to be valid, it must be added the extension [Prettier – Code formatter](https://prettier.io/). Prettier is nothing more than a code formatter, it ensures that all the code issued is in accordance with a consistent style. For example, you can write a line of code that is too long, you can limit the maximum line length to 60 characters and then Prettier will do the work of organizing the code for you. With the extension installed and the file created, the configuration of the file can be started. For more informations: [Prettier](https://prettier.io/).
 
 - **jsconfig.json**
 
-O arquivo jsconfig.json especifica os arquivos raiz e as opções para os recursos fornecidos pelo serviço de JavaScript. Por exemplo, por padrão o serviço de idioma JavaScript analisará e fornecerá o IntelliSense para todos os arquivos em seu projeto JavaScript. Se você desejar especificar quais arquivos excluir ou incluir para fornecer o IntelliSense adequado, pode utilizar uma propriedade no jsconfig.json para isso. Para maiores informações: [jsconfig.json](https://code.visualstudio.com/docs/languages/jsconfig).
+The jsconfig.json file specifies the root files and options for the features provided by the JavaScript service. For example, by default the JavaScript language service will analyze and provide IntelliSense for all files in your JavaScript project. If you want to specify which files to exclude or include to provide the appropriate IntelliSense, you can use a property in jsconfig.json for this. For more informations: [jsconfig.json](https://code.visualstudio.com/docs/languages/jsconfig).
 
 - **.eslintrc.js**
 
-O ESLint foi projetado para ser configurável, você pode desativar todas as regras e executar apenas com a validação básica de sintaxe, ou misturar e combinar as regras agrupadas e as regras personalizadas. Configuramos o ESLint através do arquivo .eslintrc.js, nele é especificado todas informações de configuração que desejamos aplicar. Para maiores informações: [Documentação do ESLint](https://eslint.org/docs/user-guide/configuring). Você também deve instalar a extensão do [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
+ESLint is designed to be configurable, you can disable all rules and execute only with basic syntax validation, or mix and match grouped rules and custom rules. We set up ESLint through the .eslintrc.js file, it specifies all the configuration information we want to apply. For more informations: [Documentation of ESLint](https://eslint.org/docs/user-guide/configuring). You must also install the [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
-Após a criação de todos esse arquivos e extensões, foram instaldas as seguintes dependências:
+After creating all these files and extensions, the following dependencies were installed:
 
-- [React](https://reactjs.org/) - Biblioteca JavaScript para criar interfaces de usuário
-- [React-Router](https://reactrouter.com/) - Rotas
+- [React](https://reactjs.org/) - JavaScript library for creating user interfaces
+- [React-Router](https://reactrouter.com/) - Routes
 - [Axios](https://github.com/axios/axios) - HTTP Client
-- [React-Google-Login](https://github.com/anthonyjgrove/react-google-login) - Um componente de login/logout do Google OAUth para React
+- [React-Google-Login](https://github.com/anthonyjgrove/react-google-login) - A Google OAUth login/logout component for React
 - [ESlint](https://eslint.org/) - Linter
-- [eslint-config-airbnb](https://github.com/airbnb/javascript) - Este pacote fornece o .eslintrc do Airbnb como uma configuração compartilhada extensível
-- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier#readme) - Desativa todas as regras desnecessárias ou que podem entrar em conflito com o Prettier
-- [eslint-import-resolver-alias](https://github.com/johvin/eslint-import-resolver-alias#readme) - Este é um plugin simples de resolução de importação de módulo Node.js para eslint-plugin-import, que suporta resolução nativa de módulo Node.js, módulo de alias/mapeamento e extensões de arquivos personalizados
-- [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import) - Este plugin oferece suporte à sintaxe de importação/exportação do ES2015+ (ES6+) e evitar problemas com erros de ortografia de caminhos de arquivos e nomes de importação
-- [eslint-plugin-jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y#readme) - Verificador AST (árvore abstrata de sintaxe) estático para regras de acessibilidade em elementos JSX
-- [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier#readme) - Executa o Prettier como uma regra do ESLint e relata as diferenças como problemas individuais do ESLint
-- [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) - Regras específicas de aprendizagem para ESLint
-- [eslint-plugin-react-hooks](https://github.com/facebook/react) - Aplica as regras dos Hooks
-- [Prettier](https://github.com/prettier/prettier) - Formatador de código
-- [prop-types](https://github.com/facebook/prop-types) - Verificação de tipo de tempo de execução para React props e objetos semelhantes. Você pode usar prop-types para documentar os tipos pretendidos de propriedades passados aos componentes. O React verificará os props passados para seus componentes em relação a essas definições e avisará em desenvolvimento se eles não corresponderem
-- [customize-cra](https://github.com/arackaf/customize-cra#readme) - Fornece um conjunto de utilitários para personalizar as configurações das versões 02 e 03 do create-react-app, aproveitando as principais funcionalidades do react-app-rewired
-- [customize-cra-react-refresh](https://github.com/esetnik/customize-cra-react-refresh#readme) - Fornece uma maneira simples de integrar react-refresh ao seu create-react-app usando customize-cra e @pmmmwh/react-refresh-webpack-plugin
+- [eslint-config-airbnb](https://github.com/airbnb/javascript) - This package provides Airbnb .eslintrc as an extensible shared configuration
+- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier#readme) - Disables all rules that are unnecessary or may conflict with Prettier
+- [eslint-import-resolver-alias](https://github.com/johvin/eslint-import-resolver-alias#readme) - This is a simple Node.js module import resolution plugin for eslint-plugin-import, which supports native Node.js module resolution, alias / mapping module and custom file extensions.
+- [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import) - This plugin supports ES2015 + import/export syntax (ES6 +) and avoids problems with misspellings of file paths and import names
+- [eslint-plugin-jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y#readme) - Static AST (abstract syntax tree) checker for accessibility rules in JSX elements
+- [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier#readme) - Run Prettier as an ESLint rule and report differences as individual ESLint problems
+- [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) - Specific learning rules for ESLint
+- [eslint-plugin-react-hooks](https://github.com/facebook/react) - Apply the Hooks rules
+- [Prettier](https://github.com/prettier/prettier) - Code formatter
+- [prop-types](https://github.com/facebook/prop-types) - Runtime type checking for React props and similar objects. You can use prop-types to document the intended types of properties passed to components. React will check past props for its components against these definitions and notify them in development if they do not match
+- [customize-cra](https://github.com/arackaf/customize-cra#readme) - Provides a set of utilities to customize the settings of versions 02 and 03 of create-react-app, taking advantage of the main features of react-app-rewired
+- [customize-cra-react-refresh](https://github.com/esetnik/customize-cra-react-refresh#readme) - Provides a simple way to integrate react-refresh into your create-react-app using customize-cra and @pmmmwh/react-refresh-webpack-plugin
+
+## Contributing
+
+You can send how many PR's do you want, I'll be glad to analyse and accept them! And if you have any question about the project...
+
+Email-me: vini_bernal@hotmail.com
+
+Connect with me at [LinkedIn](https://www.linkedin.com/in/vin%C3%ADcius-bernal-19254027/)
+
+Thank you!
