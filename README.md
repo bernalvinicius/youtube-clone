@@ -1,8 +1,7 @@
 # YouTube Clone - ByCoders
 
 ![Preview-Screens](https://raw.githubusercontent.com/bernalvinicius/desafio-frontend/master/src/assets/images/yt-clone.png)
-
-Se você quiser dar uma olhada em todas as telas do projeto, elas estão [aqui](https://u-tb.netlify.app/).
+                   https://raw.githubusercontent.com/bernalvinicius/youtube-clone/master/src/assets/images/yt-clone.png
 
 ## Porquê?
 
