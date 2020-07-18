@@ -20,7 +20,7 @@ Connect with me at [LinkedIn](https://www.linkedin.com/in/vin%C3%ADcius-bernal-1
 
 **3** - The user can log in to the application through the YouTube API with OAuth2. To do this, you need to create credentials within your project.
 
-**4** - The Authorized JavaScript origin URI and the authorized redirect URIs must point to http: // localhost: 3000. The file with the credentials and the redirect URIs is already in the project. You just need to enter your credentials.
+**4** - The Authorized JavaScript origin URI and the authorized redirect URIs must point to http://localhost:3000. The file with the credentials and the redirect URIs is already in the project. You just need to enter your credentials.
 
 ## Functionalities
 
